@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Default font with backup sans-serif */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    background-image: 
+        /* Gradient overlay */
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* Background image */
+        url('fbg.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: #fff; /* Text color on top of the background */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #3a3a3a 3px solid;
+}
+
+header h1 {
+    float: left;
+    margin-top: 10px;
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif; /* Example of a different font for headings */
+}
+
+nav {
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* Font for navigation links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    font-family: 'Open Sans', sans-serif; /* Example of another font for content */
+}
+
+.image {
+    flex: 1;
+    float: right;
+}
+
+.imager {
+    flex: 1;
+    float: left;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
